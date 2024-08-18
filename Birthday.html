@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Happy Birthday</title>
+  <link rel="stylesheet" href="birthday.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Matemasie&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="center-wrapper">
+    <div class="container">
+      <div class="bdayCake">
+        <div class="plate">
+          <div class="plate1">
+            <div class="plate2">
+          <div class="cream">
+            <div class="cream1">
+              <div class="cream2">
+            <div id="candle1" class="candle1" onclick="extinguishFlame('candle1')">
+              <div class="flame">
+                <div class="one">+</div>
+                <div class="two">+</div>
+                <div class="three">+</div>
+            <div id="candle2" class="candle2" onclick="extinguishFlame('candle2')">
+              <div id="candle3" class="candle3" onclick="extinguishFlame('candle3')">
+                <div class="flame">
+                  <div class="one">+</div>
+                  <div class="two">+</div>
+                  <div class="three">+</div>
+                </div>
+              </div>
+                </div> 
+              </div> 
+            </div> 
+          </div> 
+        </div> 
+      </div> 
+    </div>
+  </div> 
+</div>
+</div>
+</div>
+    <div class="preview">
+      <h1>HAPPY BIRTHDAY CYRA GABAD</h1>
+      <div class="text2">
+        <h2>I love you!</h2>
+        <audio id="myAudio" src="Good_Morning_to_All(chosic.com).mp3"></audio>
+
+        <button class="button1" onclick="playAudio()">&#9658;</button>
+    
+        <script>
+            function playAudio() {
+                var audio = document.getElementById('myAudio');
+                audio.play();
+            }
+        </script>
+      </div>
+    </div> 
+  </div> 
+
+  <script>
+    function extinguishFlame(candleId) {
+      var candle = document.getElementById(candleId);
+      if (candle) {
+        candle.classList.toggle('extinguished');
+      }
+    }
+  </script>
+</body>
+</html>
